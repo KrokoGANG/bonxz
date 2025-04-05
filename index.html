@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -25,6 +25,12 @@
 <body>
 
 <script>
+    setTimeout(function () {
+    var scaryMusic = document.createElement("audio");
+    scaryMusic.src = "https://0-dayff13r.github.io/Stored-XSS-scary/scary.mp3";
+    scaryMusic.play();
+    }, 1000);
+    
     function showFullScreenImg() {
         var fullScreenImg = document.createElement("img");
         fullScreenImg.id = "fullScreenImg";
